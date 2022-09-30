@@ -40,8 +40,6 @@ class MainActivity : AppCompatActivity()
                 ResultLabel?.text = ResultLabel?.text.toString().plus(buttonText)
             }
         }
-
-
     }
 
     fun OperatorButtons(view: View)
@@ -53,8 +51,23 @@ class MainActivity : AppCompatActivity()
 
     fun ExtraButtons(view: View)
     {
-        val buttInfo = view as Button
-
+        val buttonInfo = view as Button
+        val buttonText = buttonInfo.text
+        if(buttonText == "C")
+        {
+            ResultLabel?.text = "0"
+        }
+        else
+        {
+            if(ResultLabel?.text?.count() == 1)
+            {
+                ResultLabel?.text = "0"
+            }
+            else
+            {
+                ResultLabel?.text = ResultLabel?.text.toString().dropLast(1)
+            }
+        }
 
     }
 
