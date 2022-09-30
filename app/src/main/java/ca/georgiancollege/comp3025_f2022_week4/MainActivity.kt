@@ -8,7 +8,15 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity()
 {
+    // Instance members of the MainActivity class
     var ResultLabel: TextView? = null
+    var result: Float = 0.0f
+    var lhs: String = ""
+    var rhs: String = ""
+    var haveLHS: Boolean = false
+    var haveRHS: Boolean = false
+    var operation: String = ""
+    var inputReady: Boolean = true
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -22,9 +30,10 @@ class MainActivity : AppCompatActivity()
     {
         val buttonInfo = view as Button
         val buttonText = buttonInfo.text
-        if(ResultLabel?.text == "0")
+        if((ResultLabel?.text == "0") || !inputReady)
         {
             ResultLabel?.text = buttonText
+            inputReady = true
         }
         else
         {
@@ -45,7 +54,34 @@ class MainActivity : AppCompatActivity()
     fun OperatorButtons(view: View)
     {
         val buttonInfo = view as Button
+        val buttonText = buttonInfo.text
 
+        if(haveLHS)
+        {
+            rhs = ResultLabel?.text.toString()
+            haveRHS = true
+            inputReady = false
+        }
+        else
+        {
+            lhs = ResultLabel?.text.toString()
+            haveLHS = true
+            inputReady = false
+        }
+
+        if(haveLHS && haveRHS)
+        {
+            Evaluate()
+        }
+
+        when(buttonText)
+        {
+            "+" -> operation = "+"
+            "-" -> operation = "-"
+            "X" -> operation = "X"
+            "/" -> operation = "/"
+            "=" -> Evaluate()
+        }
 
     }
 
@@ -56,6 +92,7 @@ class MainActivity : AppCompatActivity()
         if(buttonText == "C")
         {
             ResultLabel?.text = "0"
+            Reset()
         }
         else
         {
@@ -70,5 +107,51 @@ class MainActivity : AppCompatActivity()
         }
 
     }
+
+    // Calculator Evaluation Functions
+    fun Reset()
+    {
+        result = 0.0f
+        lhs = ""
+        rhs = ""
+        haveLHS = false
+        haveRHS = false
+        operation = ""
+        var inputReady: Boolean = true
+    }
+
+    fun Addition(lhs: Float, rhs: Float): Float
+    {
+        return lhs + rhs
+    }
+
+    fun Subtraction(lhs: Float, rhs: Float): Float
+    {
+        return lhs - rhs
+    }
+
+    fun Multiplication(lhs: Float, rhs: Float): Float
+    {
+        return lhs * rhs
+    }
+
+    fun Division (lhs: Float, rhs: Float): Float
+    {
+        return lhs / rhs
+    }
+
+    fun Evaluate()
+    {
+        when(operation)
+        {
+            "+" -> result = Addition(lhs.toFloat(), rhs.toFloat())
+        }
+
+        ResultLabel?.text  = result.toString()
+        lhs = result.toString()
+        rhs = ""
+        haveRHS = false
+    }
+
 
 }
