@@ -54,6 +54,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/clear_button_red"
+                android:onClick="ExtraButtons"
                 android:text="@string/clear_button"
                 android:textColor="@color/white"
                 android:textSize="@dimen/button_font_size" />
@@ -67,6 +68,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/backspace_orange"
+                android:onClick="ExtraButtons"
                 android:text="@string/backspace_button"
                 android:textColor="@color/black"
                 android:textSize="@dimen/button_font_size" />
@@ -80,6 +82,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/operator_button_green"
+                android:onClick="OperatorButtons"
                 android:text="@string/percent_button"
                 android:textColor="@color/black"
                 android:textSize="@dimen/button_font_size" />
@@ -93,6 +96,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/operator_button_green"
+                android:onClick="OperatorButtons"
                 android:text="@string/divide_button"
                 android:textColor="@color/black"
                 android:textSize="@dimen/button_font_size" />
@@ -115,6 +119,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
+                android:onClick="NumberButtons"
                 android:text="@string/seven_button"
                 android:textColor="@color/white"
                 android:textSize="@dimen/button_font_size"
@@ -129,6 +134,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
+                android:onClick="NumberButtons"
                 android:text="@string/eight_button"
                 android:textColor="@color/white"
                 android:textSize="@dimen/button_font_size"
@@ -143,6 +149,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
+                android:onClick="NumberButtons"
                 android:text="@string/nine_button"
                 android:textColor="@color/white"
                 android:textSize="@dimen/button_font_size"
@@ -157,6 +164,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/operator_button_green"
+                android:onClick="OperatorButtons"
                 android:text="@string/multiply_button"
                 android:textColor="@color/black"
                 android:textSize="@dimen/button_font_size" />
@@ -179,6 +187,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
+                android:onClick="NumberButtons"
                 android:text="@string/four_button"
                 android:textColor="@color/white"
                 android:textSize="@dimen/button_font_size"
@@ -193,6 +202,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
+                android:onClick="NumberButtons"
                 android:text="@string/five_button"
                 android:textColor="@color/white"
                 android:textSize="@dimen/button_font_size"
@@ -207,6 +217,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
+                android:onClick="NumberButtons"
                 android:text="@string/six_button"
                 android:textColor="@color/white"
                 android:textSize="@dimen/button_font_size"
@@ -221,6 +232,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/operator_button_green"
+                android:onClick="OperatorButtons"
                 android:text="@string/minus_button"
                 android:textColor="@color/black"
                 android:textSize="@dimen/button_font_size"
@@ -244,6 +256,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
+                android:onClick="NumberButtons"
                 android:text="@string/one_button"
                 android:textColor="@color/white"
                 android:textSize="@dimen/button_font_size"
@@ -258,6 +271,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
+                android:onClick="NumberButtons"
                 android:text="@string/two_button"
                 android:textColor="@color/white"
                 android:textSize="@dimen/button_font_size"
@@ -272,6 +286,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
+                android:onClick="NumberButtons"
                 android:text="@string/three_value"
                 android:textColor="@color/white"
                 android:textSize="@dimen/button_font_size"
@@ -286,6 +301,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/operator_button_green"
+                android:onClick="OperatorButtons"
                 android:text="@string/plus_button"
                 android:textColor="@color/black"
                 android:textSize="@dimen/button_font_size"
@@ -309,6 +325,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
+                android:onClick="NumberButtons"
                 android:text="@string/zero_button"
                 android:textColor="@color/white"
                 android:textSize="@dimen/button_font_size"
@@ -323,6 +340,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
+                android:onClick="NumberButtons"
                 android:text="@string/decimal_button"
                 android:textColor="@color/white"
                 android:textSize="@dimen/button_font_size"
@@ -337,6 +355,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/operator_button_green"
+                android:onClick="OperatorButtons"
                 android:text="@string/plus_minus_button"
                 android:textColor="@color/black"
                 android:textSize="@dimen/button_font_size"
@@ -351,6 +370,7 @@
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/operator_button_green"
+                android:onClick="OperatorButtons"
                 android:text="@string/equals_button"
                 android:textColor="@color/black"
                 android:textSize="@dimen/button_font_size"
@@ -359,4 +379,18 @@
         </TableRow>
 
     </TableLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
