@@ -2,6 +2,7 @@ package ca.georgiancollege.comp3025_f2022_week4
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -24,6 +25,9 @@ class MainActivity : AppCompatActivity()
         setContentView(R.layout.activity_main)
 
         ResultLabel = findViewById<TextView>(R.id.Result_TextView)
+
+        var person: Person = Person()
+        Log.i("greeting",person.saysHello())
     }
 
     fun NumberButtons(view: View)
